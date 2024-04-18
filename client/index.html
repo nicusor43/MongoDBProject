@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Wonderplayers</h1>
+
+    <div id="form">
+      <div id="form-add">
+        <h2>Adauga un nou jucator</h2>
+        <form id="add-form">
+          <label for="name">Name:</label>
+          <input type="text" id="Nume" name="Nume" required />
+          <label for="team">Team:</label>
+          <input type="text" id="Echipa actuală" name="Echipa actuală" required />
+          <label for="value">Market Value:</label>
+          <input type="text" id="Valoarea de piață" name="Valoarea de piață" required />
+          <button type="submit">Add Player</button>
+        </form>
+      </div>
+      <div id="form-modify">
+        <h2>Modifica un jucator</h2>
+        <form id="modify-form">
+          <label for="id">ID:</label>
+          <input type="text" id="id" name="id" required />
+          <label for="Nume">Name:</label>
+          <input type="text" id="Nume" name="Nume" required />
+          <label for="Echipa actuală">Team:</label>
+          <input type="text" id="Echipa actuală" name="Echipa actuală" required />
+          <label for="Valoarea de piață">Market Value:</label>
+          <input type="text" id="Valoarea de piață" name="Valoarea de piață" required />
+          <button type="submit">Modify Player</button>
+        </form>
+      </div>
+      <div id="form-delete">
+        <h2>Sterge un jucator</h2>
+        <form id="delete-form">
+          <label for="id">ID:</label>
+          <input type="text" id="id" name="id" required />
+          <button type="submit">Delete Player</button>
+        </form>
+      </div>
+    </div>
+
+    <table id="table">
+      <colgroup>
+        <col span="1" class="id" />
+        <col span="1" class="nume" />
+        <col span="1" class="echipa" />
+        <col span="1" class="valoare" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Team</th>
+          <th scope="col">Market Value</th>
+        </tr>
+      </thead>
+      <tbody id="playerTable">
+        <tr>
+          <td>Player 1</td>
+          <td>Team 1</td>
+          <td>$10 million</td>
+        </tr>
+        <tr>
+          <td>Player 2</td>
+          <td>Team 2</td>
+          <td>$15 million</td>
+        </tr>
+        <tr>
+          <td>Player 3</td>
+          <td>Team 3</td>
+          <td>$20 million</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+   
+  </body>
+</html>

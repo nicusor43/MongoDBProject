@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+table {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0 auto;
+  font-size: 2rem;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 5% 3%;
+}
+
+.id {
+  /* background-color: ; */
+  width: 30%;
+}
+.nume {
+  /* background-color: cadetblue; */
+  width: 30%;
+}
+
+.echipa {
+    /* background-color: darkgreen; */
+    width: 25%;
+}
+
+.valoare {
+    /* background-color: darkviolet; */
+}
+
+caption {
+  caption-side: bottom;
+}
